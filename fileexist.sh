@@ -10,4 +10,4 @@ fi
 
 # ! is like logaical not
 # what this file does  is that if the file
-# is not there it say its okay
+# is not there it say its okay to make the file 
