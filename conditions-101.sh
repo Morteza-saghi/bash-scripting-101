@@ -11,3 +11,9 @@ ls
 else echo 'bye'
 fi
 fi
+
+
+
+
+# if with -d option is to check something exists or not
+
