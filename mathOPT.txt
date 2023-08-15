@@ -7,4 +7,4 @@ for math opt we do it like this
 ((2 * 2))  4
 (( 3-1 ))  2
 (( 4/2 ))  2
-((3 % 2))  1   the left over
+((3 % 2))  1   outcome is the left over
