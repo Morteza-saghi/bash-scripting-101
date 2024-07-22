@@ -40,10 +40,10 @@ fi
 
 Like:
 
+```
 num1=$1
 num2=$2
 
-```
 if [ $num1 == $num2  ]
 then
     echo " equal " 
@@ -54,17 +54,16 @@ fi
 
 Or:
 
-#!/bin/bash
-
+```
 name=$1
 
-```
 if [ "$name" = "A" ]; then
 echo "This is if $name"
 else
 echo "The rest will see this"
 fi
 ```
+
 notice the diffrence between how we would compare strings and nums  
 
 ---
