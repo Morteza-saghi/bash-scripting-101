@@ -72,9 +72,6 @@ notice the diffrence between how we would compare strings and nums
 
 ---
 
-## from here needs editions
-
-
 #### For multiple conditions:
 
 ```
@@ -108,6 +105,7 @@ echo some other shit
 # code to execute if none of the conditions are true
 fi
 ```
+---
 
 ### Comparison Operators
 
@@ -127,17 +125,32 @@ These operators are used to compare numeric values. For string comparisons, you 
     <: lexicographically less than
     >: lexicographically greater than
 
-Examples
-Simple If Statement
+Examples:
 
-bash
-
-#!/bin/bash
-
+```
 read -p "Enter a number: " number
-if [ "$number" -gt 10 ]; then
-    echo "The number is greater than 10."
+if [ "$number" -gt 10 ]
+then
+echo "The number is greater than 10."
 fi
+```
+
+
+Or
+
+```
+num=$1
+
+if [ $num -gt 10  ]
+then 
+echo its bigger than 10 fuck
+else
+echo its realy small
+fi
+```
+
+
+from here now needs 
 
 If-Else Statement
 
