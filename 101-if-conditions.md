@@ -75,19 +75,41 @@ notice the diffrence between how we would compare strings and nums
 ## from here needs editions
 
 
-For multiple conditions:
+#### For multiple conditions:
 
-bash
-
-if [ condition1 ]; then
-    # code to execute if condition1 is true
-elif [ condition2 ]; then
-    # code to execute if condition2 is true
+```
+if [ condition1 ]
+then
+# code to execute if condition1 is true
+elif [ condition2 ]
+then
+# code to execute if condition2 is true
 else
-    # code to execute if none of the conditions are true
+# code to execute if none of the conditions are true
 fi
+```
 
-Comparison Operators
+
+Like:
+
+```
+name=$1
+
+if [ $name = A  ]
+then
+echo A
+# code to execute if condition1 is true
+elif [  $name = B  ]
+then
+echo B
+# code to execute if condition2 is true
+else
+echo some other shit
+# code to execute if none of the conditions are true
+fi
+```
+
+### Comparison Operators
 
 Here are some commonly used comparison operators in Bash:
 
