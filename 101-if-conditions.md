@@ -23,6 +23,23 @@ echo hello
 fi
 ```
 
+
+---
+
+- in String comparison "" would mean as null or nothing
+
+```
+
+A=$1
+
+if [ "$A" == "" ]
+then 
+echo this is null 
+else 
+echo hey u have entered some shit
+fi
+``` 
+
 ---
 
 
