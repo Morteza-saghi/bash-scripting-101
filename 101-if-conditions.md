@@ -166,13 +166,11 @@ echo its realy small
 fi
 ```
 
+---
 
-from here now needs 
+#### If-Else Statement
 
-If-Else Statement
-
-bash
-
+```
 #!/bin/bash
 
 read -p "Enter a number: " number
@@ -181,10 +179,13 @@ if [ "$number" -gt 10 ]; then
 else
     echo "The number is 10 or less."
 fi
+```
 
-If-Elif-Else Statement
+---
 
-bash
+#### If-Elif-Else Statement
+
+```
 
 #!/bin/bash
 
@@ -196,7 +197,4 @@ elif [ "$number" -eq 10 ]; then
 else
     echo "The number is less than 10."
 fi
-
-Contributing
-
-Contributions to this tutorial are welcome! If you have any improvements or additional examples, please fork the repository and submit a pull request.
+```
