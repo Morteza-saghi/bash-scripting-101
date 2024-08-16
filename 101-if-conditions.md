@@ -165,6 +165,32 @@ else
 echo its realy small
 fi
 ```
+---
+
+### to A++ a var 
+
+
+```
+A=5
+((A++))
+echo $A  # Output will be 6
+```
+
+Using let:
+
+```
+A=5
+let A++
+echo $A  # Output will be 6
+```
+
+Explanation:
+
+- ((A++)) and let A++ both increment the value of A by 1. 
+
+
+
+
 
 ---
 
