@@ -102,7 +102,10 @@ exit 1   # Exits with a status of 1 (error)
 
 ---
 
-###‌ Checking the Exit Status of Commands
+
+### Checking the Exit Status of Commands
+
+
 
 The special variable `$?` stores the exit status of the last executed command, which you can use to check success or failure.
 
