@@ -39,27 +39,42 @@ Redirects the standard error of a command to a file.
 ```
 command 2> error.log      # Redirects standard error to error.log
 &> - Redirect Both stdout and stderr
+```
 Combines both stdout and stderr into the same file.
-
 
 ```
 command &> combined.log   # Redirects both output and error to combined.log
+```
+
+---
+
+```
 2>&1 - Redirect stderr to stdout
+```
 Redirects stderr to wherever stdout is currently directed. This is commonly used to combine outputs.
 
 
 ```
 command > output.log 2>&1 # Redirects output to output.log and error to the same file
+```
+
+---
+
+```
 >&2 - Redirect Output to stderr
+```
 Redirects any output to stderr, which is helpful for custom error messages.
 
+---
 
 ```
 echo "An error occurred" >&2   # Sends this message to stderr
 &>/dev/null - Suppress Output and Error Messages
+```
+
+---
+
 Redirects both stdout and stderr to /dev/null, effectively discarding all output and error messages. This is useful for commands where output is unnecessary.
-
-
 ```
 command &>/dev/null     # Suppresses all output and errors
 ```
@@ -73,19 +88,18 @@ The exit status of a command is a numeric code representing whether the command 
 
 ```
 exit 0 - Successful Exit
+```
 Exits a script or function with a 0 status, signaling success.
 ```
-
-```
 exit 0   # Exits with a status of 0 (success)
-exit 1 - Error Exit
+exit 1 - #‌ Error Exit
 ```
-Exits a script or function with a non-zero status, signaling an error. By convention, exit 1 signifies a general error.
-
+- Exits a script or function with a non-zero status, signaling an error. By convention, exit 1 signifies a general error.
 
 ```
 exit 1   # Exits with a status of 1 (error)
 ```
+
 ---
 
 ###‌ Checking the Exit Status of Commands
@@ -111,15 +125,36 @@ else
 fi
 ```
 
-### set -e - Exit Immediately on Error
+### making bash more sane 
+
+#### set -e 
+```
+set -e - Exit Immediately on Error
+```
 By using set -e, a script will exit immediately if any command returns a non-zero exit status, helping catch errors early.
 
+---
+
+#### set -u  
 
 ```
-set -e
-command1    # If this command fails, the script exits immediately
-command2
+set -u
 ```
+
+Treat unset variables as an error and exit immediately.
+
+---
+
+#### set -o pipefail
+
+```
+set -o pipefail
+```
+If any command in a pipeline fails, the entire pipeline fails. but resume the script execution
+
+
+---
+
 
 | Operator       | Description                                 | Example                        |
 |----------------|---------------------------------------------|--------------------------------|
@@ -132,4 +167,3 @@ command2
 | `&>/dev/null`  | Discard both output and error messages     | `command &>/dev/null`          |
 | `exit 0`       | Exit with success status                   | `exit 0`                       |
 | `exit 1`       | Exit with error status                     | `exit 1`                       |
-| `set -e`       | Exit on error                              | `set -e`                       |
