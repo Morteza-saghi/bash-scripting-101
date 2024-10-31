@@ -24,7 +24,7 @@ command 0< input.txt      # Equivalent to the above
 ```
 
 
-### 1> - Standard Output (stdout)
+### `1>` - Standard Output (stdout)
 Redirects the standard output of a command to a file.
 
 ```
@@ -32,7 +32,7 @@ command > output.txt      # Redirects standard output to output.txt
 command 1> output.txt     # Equivalent to the above
 ```
 
-### 2> - Standard Error (stderr)
+### `2>` - Standard Error (stderr)
 Redirects the standard error of a command to a file.
 
 
